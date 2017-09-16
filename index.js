@@ -8,10 +8,6 @@ app.get('/', function (req, res) {
   res.send('Hello World!');
 });
 
-app.get('/home', function (req, res) {
-  res.sendFile(__dirname+"/home.html");
-});
-
 app.get('/navbar', function (req, res) {
     res.sendFile(__dirname+"/navbar.html");
 });

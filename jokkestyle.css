@@ -1,0 +1,88 @@
+/* Font and background for page */
+html {
+    box-sizing: border-box;
+    background: white;
+    font-family: "Century Gothic", cursive;
+    font-size: 4vw;
+    font-weight: 200;
+}
+
+body {
+    margin: 0;
+}
+
+/* All panels containing jokke */
+.jokke_panels{
+    min-height:100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+/* CSS for each panel of Jokke */
+.jokke{
+    background: #ccc;
+    color: #eee;
+    text-align: center;
+    align-items:center;
+    min-width: 0;
+    /* Smooth transition */
+    transition:
+            flex 0.6s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+            font-size 0.6s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+            background 0.3s;
+    font-size: 4vw;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex: 1;
+    box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);
+}
+
+/* Everything inside the flex panel */
+.jokke > *{
+    margin:0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    flex: 1 0 auto;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    transition:transform 0.5s;
+    font-size: 4vw;
+}
+
+/* For the transitions */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Transforming the panels upon opening */
+.jokke > *:first-child { transform: translateY(-100%); }            /* Hides first child (top text) */
+.jokke.open-active > *:first-child { transform: translateY(0); }    /* Displays first child (top text) when open-active */
+.jokke > *:last-child { transform: translateY(100%); }              /* Hides last child (bottom text) */
+.jokke.open-active > *:last-child { transform: translateY(0); }     /* Displays first child (top text) when open-active */
+
+/* Paragraphs inside each panel */
+.jokke p {
+    text-transform: uppercase;
+    font-family: 'Century Gothic', cursive;
+    text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+    font-size: 4vw;
+}
+
+/* Panel when opened */
+.jokke.open {
+    flex: 5; /* Active panel takes up 5 times more space */
+    font-size: 8vw;
+}
+
+
+/* Individual panels containing images of Jokke */
+.panel1 { background-image: url("img/jokke1.jpg"); }
+.panel2 { background-image: url("img/jokke2.jpg"); }
+.panel3 { background-image: url("img/jokke3.png"); }
+.panel4 { background-image: url("img/jokke4.png"); }
+.panel5 { background-image: url("img/jokke5.png"); }

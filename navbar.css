@@ -3,14 +3,36 @@
     font-family: sans-serif;
 }
 
-body{
+.site{
     background: #eee;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+}
+
+.main-content{
+    flex: 1;
+    width: 100%;
 }
 
 .navbar{
     width: 100%;
     max-width: 1080px;
     margin: 0 auto;
+}
+
+footer{
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    background-color: #333;
+}
+
+footer > p{
+    color: #fff;
+    text-align: center;
+    padding: 15px;
 }
 
 nav{
@@ -28,6 +50,16 @@ nav a{
     color: #ffffff;
     display: block;
     padding: 10px;
+}
+
+.title{
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 10px 25px;
+    font-weight: bolder;
+
 }
 
 nav a:hover{
@@ -57,6 +89,16 @@ nav ul.social{
 }
 nav ul.social li{
     flex: 1 1 0;
+}
+main{
+    margin: 0 auto;
+    padding: 30px 0px;
+    background-color: #fff;
+    max-width: 1080px;
+}
+
+main *{
+    padding: 20px;
 }
 
 @media screen and (min-width: 768px) {

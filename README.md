@@ -17,7 +17,19 @@ $ npm install
 ```
 3. To run the server
 ```
-$ node index.js
+$ npm start
+```
+
+## Run Tests
+
+1.  Run the server
+```
+$ npm start
+```
+
+2. Run the Tests
+```
+$ npm test
 ```
 
 ## Checklist

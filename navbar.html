@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Navbar</title>
-    <link rel="stylesheet" type="text/css" href="navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="javascript/ajax_load.js"></script>
 </head>
 <body>
     <div class="navbar">
         <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Store</a></li>
+            <ul class="list">
+                <li>Opheim</li>
+                <li>Tødden</li>
+                <li id="bortne">Bortne</li>
+                <li>Andreas</li>
             </ul>
             <ul class="social">
                 <li><a href="" class="fb">Facebook</a></li>
@@ -20,5 +22,12 @@
             </ul>
         </nav>
     </div>
+
+    <div id="change_content">
+        <h1>
+
+        </h1>
+    </div>
+
 </body>
 </html>

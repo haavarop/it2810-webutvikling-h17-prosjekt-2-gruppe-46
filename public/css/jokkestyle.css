@@ -59,9 +59,9 @@ body {
 /* Paragraphs inside each panel */
 .jokke p {
     text-transform: uppercase;
-    font-family: 'Century Gothic', cursive;
+    font-family: sans-serif, cursive;
     text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 /* Panel when opened */

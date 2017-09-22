@@ -4,7 +4,7 @@ function drinkUpBitch() {
     if (drinkupbitch === 0){
         document.getElementById("1-head").innerHTML = "Straight from the bottle!";
         document.getElementById("1").innerHTML = "Drink from the bottle. Don't mix that shit!";
-        document.getElementById("1-img").src = 'images/whiskey-girls.jpg';
+        document.getElementById("1-img").src = 'images/bortne/whiskey-girls.jpg';
         document.getElementById("1-button").innerHTML ="Take me back to single malt scotch!";
         drinkupbitch=1;
     }
@@ -13,7 +13,7 @@ function drinkUpBitch() {
         document.getElementById("1").innerHTML = "Single malt Scotch is single malt whisky made in Scotland.\n" +
             "            To be a single malt scotch the whisky must have been distilled at a single distillery using a pot still distillation process and made from a mash of malted grain.\n" +
             "            As with any Scotch whisky, a single malt Scotch must be distilled in Scotland and matured in oak casks in Scotland for at least three years, and one day.";
-        document.getElementById("1-img").src = 'images/OD-BJ169_SINGLE_M_20160127123528.jpg';
+        document.getElementById("1-img").src = 'images/bortne/OD-BJ169_SINGLE_M_20160127123528.jpg';
         document.getElementById("1-button").innerHTML="Want to learn how to drink single malt scotch?";
         drinkupbitch=0;
     }
@@ -28,7 +28,7 @@ function oldFashion() {
             "Fill the glass with ice cubes and add whiskey.\n" +
             "\n" +
             "Garnish with orange twist, and a cocktail cherry.";
-        document.getElementById("2-img").src = 'images/bourbon-old-fashioned.jpg';
+        document.getElementById("2-img").src = 'images/bortne/bourbon-old-fashioned.jpg';
         document.getElementById("2-button").innerHTML = "Take me back to bourbon whiskey!";
         oldfashion = 1;
     }
@@ -38,7 +38,7 @@ function oldFashion() {
         "The name is derived from the French Bourbon dynasty, although it is unclear precisely what inspired the whiskey's name" +
         "(contenders include Bourbon County in Kentucky and Bourbon Street in New Orleans)."+
         "Bourbon has been distilled since the 18th century.";
-        document.getElementById("2-img").src = 'images/bourbon-whiskey.jpg';
+        document.getElementById("2-img").src = 'images/bortne/bourbon-whiskey.jpg';
         document.getElementById("2-button").innerHTML = "Want to learn a bourbon whiskey drink?";
         oldfashion = 0;
 
@@ -54,7 +54,7 @@ function whiskeySour() {
         "Shake with ice. Strain into chilled glass, garnish and serve." +
         "If served 'On the rocks', strain ingredients into old-fashioned glass filled with " +
         "Garnish with a lemon twist and a cocktail cherry.";
-    document.getElementById("3-img").src = 'images/fa-Whiskey-Sour.jpg';
+    document.getElementById("3-img").src = 'images/bortne/fa-Whiskey-Sour.jpg';
     document.getElementById("3-button").innerHTML = "Take me back to Rye whiskey!";
     whiskeysour= 1;
     }
@@ -63,7 +63,7 @@ function whiskeySour() {
         document.getElementById("3").innerHTML = "In the United States, rye whiskey is, by law, made from a mash of at least 51 percent rye." +
         "It is distilled to no more than 160 U.S. proof (80% abv), and aged in charred, new oak barrels." +
         "Rye whiskey that has been so aged for at least two years and has not been blended with other spirits may be further designated as straight, as in straight rye whiskey.";
-        document.getElementById("3-img").src = 'images/d21c743e9f154217dcc447f6354eaaac.jpg';
+        document.getElementById("3-img").src = 'images/bortne/d21c743e9f154217dcc447f6354eaaac.jpg';
         document.getElementById("3-button").innerHTML = "Want to learn a rye whiskey drink?"
         whiskeysour=0;
     }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>jaja</title>
+        <link href="css/prism.css" rel="stylesheet" />
+    </head>
+    <body>
+        <script src="javascript/prism.js"></script>
+
+        <div class="docElement">
+            <h2>Use ofNode.js w/ React for server on port 8082</h2>
+            <pre><code class="language-javascript">
+                const express = require('express');
+                const path = require('path');
+                const app = express();
+
+                app.use(express.static(path.join(__dirname, 'public')));
+
+                app.get('/', function (req, res) {
+                  res.send('Hello World!');
+                });
+
+                [...]
+
+                app.listen(8082, function () {
+                  console.log('Example app listening on port 8082!')
+                });
+            </code></pre>
+        </div>
+
+        <div class="docElement">
+        <h2>Custom navigation</h2>
+        <pre><code class="language-markup">
+            &lt;nav>
+                &lt;ul>
+                    &lt;li class="title">SquadTeam45&lt;/li>
+                    &lt;li class="view" id="opheim">Opheim&lt;/li>
+                    &lt;li class="view" id="jokke">Tødden&lt;/li>
+                    &lt;li class="view" id="bortne">Bortne&lt;/li>
+                    &lt;li class="view" id="anton">Andreas&lt;/li>
+                    &lt;li class="view" id="documentation">Documentation&lt;/li>
+                &lt;/ul>
+                &lt;ul class="social">
+                    &lt;li>&lt;a href="" class="fb">Facebook&lt;/a>&lt;/li>
+                    &lt;li>&lt;a href="" class="tw">Twitter&lt;/a>&lt;/li>
+                &lt;/ul>
+            &lt;/nav>
+        </code></pre>
+        </div>
+
+
+        <div class="docElement">
+            <h2>Flexbox</h2>
+            <pre><code class="language-css">
+                @media screen and (min-width: 768px) {
+                    nav ul{
+                        display: flex;
+                    }
+                    nav li{
+                        flex: 1 1 0;
+                    }
+
+                    nav{
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    .social{
+                        margin: 0;
+                    }
+                }
+            </code></pre>
+        </div>
+
+        <div class="docElemtn">
+            <h2>ajax</h2>
+            <pre><code class="language-javascript">
+                $(document).ready(function(){
+                    $(".view").on('click', function(){
+                        var name = this.id;
+                        $(".main-content").load(name+'.html');
+                    });
+                });
+            </code></pre>
+        </div>
+    </body>
+</html>

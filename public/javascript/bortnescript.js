@@ -14,7 +14,7 @@ function drinkUp() {
             "            To be a single malt scotch the whisky must have been distilled at a single distillery using a pot still distillation process and made from a mash of malted grain.\n" +
             "            As with any Scotch whisky, a single malt Scotch must be distilled in Scotland and matured in oak casks in Scotland for at least three years, and one day.";
         document.getElementById("1-img").src = 'images/bortne/OD-BJ169_SINGLE_M_20160127123528.jpg';
-        document.getElementById("1-button").innerHTML="Want to learn how to drink single malt scotch?";
+        document.getElementById("1-button").innerHTML="Want to learn a single malt scotch drink?";
         drinkup=0;
     }
 
@@ -53,7 +53,7 @@ function whiskeySour() {
     document.getElementById("3").innerHTML = "<ul> <li>4.5cl Rye whiskey</li> <li>2cl fresh lime juice</li> <li>1.5cl Gomme syrup</li> <li>Dash of eggwhite</li></ul>" +
         "Shake with ice. Strain into chilled glass, garnish and serve." +
         "If served 'On the rocks', strain ingredients into old-fashioned glass filled with " +
-        "Garnish with a lemon twist and a cocktail cherry.";
+        "with garnish from a orange twist or lemon twist and a cocktail cherry.";
     document.getElementById("3-img").src = 'images/bortne/fa-Whiskey-Sour.jpg';
     document.getElementById("3-button").innerHTML = "Take me back to Rye whiskey!";
     whiskeysour= 1;

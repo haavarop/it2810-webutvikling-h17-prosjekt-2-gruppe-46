@@ -81,8 +81,8 @@ body {
 
 
 /* Individual panels containing images of Jokke */
-.panel1 { background-image: url("img/jokke1.jpg"); }
-.panel2 { background-image: url("img/jokke2.jpg"); }
-.panel3 { background-image: url("img/jokke3.png"); }
-.panel4 { background-image: url("img/jokke4.png"); }
-.panel5 { background-image: url("img/jokke5.png"); }
+.panel1 { background-image: url("../images/todden/jokke1.jpg"); }
+.panel2 { background-image: url("../images/todden/jokke2.jpg"); }
+.panel3 { background-image: url("../images/todden/jokke3.png"); }
+.panel4 { background-image: url("../images/todden/jokke4.png"); }
+.panel5 { background-image: url("../images/todden/jokke5.png"); }

@@ -1,0 +1,43 @@
+
+.mainSite {
+    display: flex;
+    min-height: 100vh;
+}
+
+#contents{
+    display: block;
+    margin: auto;
+    flex: 1;
+}
+
+/*Home screen*/
+#home p{
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/*Photo album*/
+#photoalbum{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+}
+
+.album_div{
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+}
+.album_photo{
+    width: 150px;
+    padding: 5px;
+
+}

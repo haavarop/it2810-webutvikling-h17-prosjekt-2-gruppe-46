@@ -44,7 +44,7 @@ nav ul{
     padding: 0;
 }
 
-nav a{
+nav li{
     text-align: center;
     text-decoration: none;
     color: #ffffff;
@@ -62,18 +62,30 @@ nav a{
 
 }
 
-nav a:hover{
+
+nav li:hover{
     background-color: #555;
+    cursor: pointer;
 }
+
+nav a{
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+}
+
 a.tw{
-    background: url(img/tw.png) no-repeat center;
+    background: url(../../img/tw.png) no-repeat center;
     background-size: 80%;
 }
 a.fb{
-    background: url(img/fb.png) no-repeat center;
+    background: url(../../img/fb.png) no-repeat center;
     background-size: 80%;
 }
 
+/*
 .social a{
     text-indent: -10000px;
 }
@@ -90,6 +102,7 @@ nav ul.social{
 nav ul.social li{
     flex: 1 1 0;
 }
+*/
 main{
     margin: 0 auto;
     padding: 30px 0px;
@@ -100,6 +113,7 @@ main{
 main *{
     padding: 20px;
 }
+
 
 @media screen and (min-width: 768px) {
     nav ul{

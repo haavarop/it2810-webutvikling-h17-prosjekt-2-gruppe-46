@@ -12,6 +12,10 @@ app.get('/navbar', function (req, res) {
     res.sendFile(__dirname+"/navbar.html");
 });
 
+app.get('/home', function (req, res) {
+    res.sendFile(__dirname+"/home.html");
+});
+
 //The 404 Route (ALWAYS Keep this as the last route)
 app.get('*', function(req, res){
   res.send('404, four oh four', 404);

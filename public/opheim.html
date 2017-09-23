@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/opheim.css">
+</head>
+<body>
+    <div class="flex-container-opheim">
+        <div class="slideshow-container-opheim">
+            <div class="slide">
+                <p id="numText1" class="number-text">1/4</p>
+                <img id="img1" alt="parrot1" src="http://images.all-free-download.com/images/graphiclarge/colorful_parrot_picture_168788.jpg">
+                <p id="text1" class="caption-text">Birb</p>
+            </div>
+            <div style="display: none" class="slide">
+                <p  id="numText2" class="number-text">2/4</p>
+                <img id="img2" alt="parrot2" src="https://static1.squarespace.com/static/56774d10e0327c06bcd4b6c4/t/57dc71c8e4fcb5f64a4f79f2/1474064981886/">
+                <p id="text2" class="caption-text">Pretty birb</p>
+            </div>
+            <div style="display: none"  class="slide">
+                <p id="numText3" class="number-text">3/4</p>
+                <img id="img3" alt="parrot3" src="https://i.pinimg.com/736x/62/e9/cb/62e9cb72c16d09b99267d3caeb145af2--amazon-rainforest-fans.jpg">
+                <p id="text3" class="caption-text">Different birb</p>
+            </div>
+            <div style="display: none" class="slide">
+                <p id="numText4" class="number-text">4/4</p>
+                <img id="img4" alt="parrot4" src="http://www.visiontimes.com/uploads/2016/04/clairerosen_birdsofafeather_IMG_7799-400x600.jpg">
+                <p id="text4" class="caption-text">Last birb</p>
+            </div>
+            <a class="btn-prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="btn-next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+        <div class="newsletter-opheim">
+            <form>
+                Sign up for the newsletter: <input type="text" name="email" id="email-field">
+                <input type="button" value="Submit" style="cursor: pointer"
+                       id="emailSubmitButton" onclick="validateEmailSubmit()">
+            </form>
+            <p id="result"></p>
+        </div>
+        <div>
+            <p>Find out more at:</p>
+            <a class="party-button" href="http://www.reddit.com/r/partyparrot"></a>
+        </div>
+    </div>
+    <script type="text/javascript" src="javascript/opheimScript.js"></script>
+</body>
+</html>

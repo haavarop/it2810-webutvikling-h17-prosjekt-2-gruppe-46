@@ -1,0 +1,74 @@
+
+.flex-container-opheim{
+    text-align: center;
+    padding: 10px;
+}
+
+.btn-next, .btn-prev{
+    cursor: pointer;
+    top: -375px;
+    position: relative;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    flex: 1;
+}
+.btn-next {
+    right: -155px;
+    border-radius: 3px 0 0 3px;
+}
+.btn-prev {
+    left: -155px;
+}
+
+.btn-next:hover, .btn-prev:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.caption-text{
+    color: whitesmoke;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    position: relative;
+    bottom: 45px;
+    text-align: center;
+}
+
+.number-text{
+    color: whitesmoke;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    position: relative;
+    top: 45px;
+    text-align: center;
+}
+a.party-button {
+    border-radius:20px;
+    background:#444;
+    color:#FFF;
+    text-decoration:none;
+    padding:40px 30px;
+    display:block;
+    margin:auto;
+    width:80%;
+    font-size:3.5vw}
+
+a.party-button:after{content:'SPREAD THE PARTY'}
+
+a.party-button:hover{
+    background-color:#fd767a;
+    color:#444;
+    animation-name:buttonParrot;
+    animation-duration:1s;
+    animation-direction:alternate;
+    animation-iteration-count:infinite;
+    -webkit-animation-name:buttonParrot;
+    -webkit-animation-duration:1s;
+    -webkit-animation-direction:alternate;
+    -webkit-animation-iteration-count:infinite
+}
+a.party-button:hover:after{
+    content:'THE PARROT INSISTS'
+}

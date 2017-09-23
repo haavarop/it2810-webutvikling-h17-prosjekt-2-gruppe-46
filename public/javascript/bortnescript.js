@@ -36,8 +36,8 @@ function oldFashion() {
         document.getElementById("2-head").innerHTML = "Bourbon whiskey";
         document.getElementById("2").innerHTML = "Bourbon whiskey is a type of American whiskey: a barrel-aged distilled spirit made primarily from corn."+
         "The name is derived from the French Bourbon dynasty, although it is unclear precisely what inspired the whiskey's name" +
-        "(contenders include Bourbon County in Kentucky and Bourbon Street in New Orleans)."+
-        "Bourbon has been distilled since the 18th century.";
+        " (contenders include Bourbon County in Kentucky and Bourbon Street in New Orleans)."+
+        " Bourbon has been distilled since the 18th century.";
         document.getElementById("2-img").src = 'images/bortne/bourbon-whiskey.jpg';
         document.getElementById("2-button").innerHTML = "Want to learn a bourbon whiskey drink?";
         oldfashion = 0;

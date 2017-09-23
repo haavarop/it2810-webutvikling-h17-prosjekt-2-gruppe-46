@@ -2,57 +2,64 @@
 <html lang="no">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/bortnestyle.css">
-    <link rel="icon" href="exercise1_bortne/favicon.ico" type="image/x-icon" />
-    <title>Alkohol</title>
 </head>
 <body>
 <!--Overskrift-->
     <div class="flex-container">
         <div class="flex-item"><h1>The big whiskey guide by Bortne</h1></div>
-    </div>
+
 <!--Stort bilde-->
     <div class="flex-container-image">
         <div class="flex-item-image">
             <img src="images/bortne/iStock-533225488_16x9.jpg%3Fitok=2HUFc6Ct">
         </div>
     </div>
+
 <!--Dei tre ulike typane-->
     <!--Type 1-->
     <div class="flex-container-drinks">
-        <div class="flex-item-drinks"><h2 id="1-head"></h2>
-        <p id="1"></p>
+        <div class="flex-item-drink">
+            <div class="flex-item-drinks-text">
+                <h2 id="1-head"></h2>
+                <p id="1"></p>
+            </div>
+            <div class="flex-item-drinks-picture-button">
                 <div class="image-drink-size"> <img id="1-img" src=""></div>
-            <button onclick="drinkUp()"><b id="1-button"></b></button>
+                <button onclick="drinkUp()"><b id="1-button"></b></button>
+            </div>
         </div>
 
 <!--Type 2-->
-        <div class="flex-item-drinks"><h2 id="2-head"></h2>
-            <p id="2"></p>
-            <div class="image-drink-size"><img id="2-img" src=""></div>
-            <button onclick="oldFashion()"><b id="2-button"></b></button>
+        <div class="flex-item-drink">
+            <div class="flex-item-drinks-text">
+                <h2 id="2-head"></h2>
+                <p id="2"></p>
+            </div>
+            <div class="flex-item-drinks-picture-button">
+                <div class="image-drink-size"><img id="2-img" src=""></div>
+                <button onclick="oldFashion()"><b id="2-button"></b></button>
+            </div>
         </div>
 
 <!--Type 3-->
-        <div class="flex-item-drinks"><h2 id="3-head"></h2>
-        <p id="3">        </p>
-            <div class="image-drink-size"> <img id="3-img" src=""> </div>
-            <button onclick="whiskeySour()"><b id="3-button"></b></button>
+        <div class="flex-item-drink">
+            <div class="flex-item-drinks-text">
+                <h2 id="3-head"></h2>
+                <p id="3"></p>
+            </div>
+            <div class="flex-item-drinks-picture-button">
+                <div class="image-drink-size"> <img id="3-img" src=""></div>
+                <button onclick="whiskeySour()"><b id="3-button"></b></button>
+            </div>
         </div>
     </div>
-<!--/*Footer-->
-    <div class="flex-container-footer">
-        <div class="flex-item-footer"><h1>Drink responsibly!</h1> <p>I do not encourage drinking!</p><p><small>Unless you want to, then I would like to join you! #Party</small></p></div>
-        <div class="flex-item-footer"><h1>Want some dope music while reading? Push the button!</h1><button onclick="playMusic()">Dope music!</button><p><small>Du skal få lov til å sette på pause ved å trykke på knappen igjen!</small></p></div>
     </div>
 
 
-<script src="javascript/bortnescript.js"></script>
-<script>oldFashion()</script>
-<script>drinkUp()</script>
-<script>whiskeySour()</script>
+    <script src="javascript/bortnescript.js"></script>
+    <script>oldFashion()</script>
+    <script>drinkUp()</script>
+    <script>whiskeySour()</script>
 </body>
 </html>

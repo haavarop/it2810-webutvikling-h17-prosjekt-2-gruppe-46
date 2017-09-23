@@ -3,63 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/bortnestyle.css">
+    <title>Whiskey</title>
 </head>
 <body>
 <!--Overskrift-->
     <div class="flex-container">
-        <div class="flex-item"><h1>The big whiskey guide by Bortne</h1></div>
+        <div class="flex-item">
+            <h1>Whiskey bilder</h1>
+        </div>
 
 <!--Stort bilde-->
-    <div class="flex-container-image">
-        <div class="flex-item-image">
-            <img src="images/bortne/iStock-533225488_16x9.jpg%3Fitok=2HUFc6Ct">
+        <div class="flex-container-image">
+                <img src="images/bortne/iStock-533225488_16x9.jpg%3Fitok=2HUFc6Ct" alt="Whiskey">
+        </div>
+
+        <div class="botton-music">
+            <button onclick="playMusic()"> Click for music!</button>
+        </div>
+
+        <div class="slideshow">
+            <div class="image-in-container">
+                <img src="images/bortne/johnny-walker.jpg" alt="Whiskey">
+            </div>
+
+            <div class="image-in-container">
+                <img src="images/bortne/whiskey-drinking-cocktail-bar.jpg" alt="Whiskey">
+            </div>
+
+            <div class="image-in-container">
+                <img src="images/bortne/maxresdefault.jpg" alt="Whiskey">
+            </div>
+
+            <div class="image-in-container">
+                <img src="images/bortne/whiskey_drink_glasses_table_cube_ice_76627_1920x1080.jpg" alt="Whiskey">
+            </div>
+        </div>
+
+        <div class="dots-for-images">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
         </div>
     </div>
-
-<!--Dei tre ulike typane-->
-    <!--Type 1-->
-    <div class="flex-container-drinks">
-        <div class="flex-item-drink">
-            <div class="flex-item-drinks-text">
-                <h2 id="1-head"></h2>
-                <p id="1"></p>
-            </div>
-            <div class="flex-item-drinks-picture-button">
-                <div class="image-drink-size"> <img id="1-img" src=""></div>
-                <button onclick="drinkUp()"><b id="1-button"></b></button>
-            </div>
-        </div>
-
-<!--Type 2-->
-        <div class="flex-item-drink">
-            <div class="flex-item-drinks-text">
-                <h2 id="2-head"></h2>
-                <p id="2"></p>
-            </div>
-            <div class="flex-item-drinks-picture-button">
-                <div class="image-drink-size"><img id="2-img" src=""></div>
-                <button onclick="oldFashion()"><b id="2-button"></b></button>
-            </div>
-        </div>
-
-<!--Type 3-->
-        <div class="flex-item-drink">
-            <div class="flex-item-drinks-text">
-                <h2 id="3-head"></h2>
-                <p id="3"></p>
-            </div>
-            <div class="flex-item-drinks-picture-button">
-                <div class="image-drink-size"> <img id="3-img" src=""></div>
-                <button onclick="whiskeySour()"><b id="3-button"></b></button>
-            </div>
-        </div>
-    </div>
-    </div>
-
-
     <script src="javascript/bortnescript.js"></script>
-    <script>oldFashion()</script>
-    <script>drinkUp()</script>
-    <script>whiskeySour()</script>
+
 </body>
 </html>

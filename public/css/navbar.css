@@ -109,6 +109,11 @@ main{
     max-width: 1080px;
 }
 
+.view, .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @media screen and (min-width: 768px) {
     nav ul{

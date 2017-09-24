@@ -11,6 +11,8 @@
 
         <div class="docElement">
             <h2>Use of Node.js w/ Express for server on port 8082</h2>
+            <p>The servers listens for requests on port 8082, and serves the client home.html.
+            The rest of the site uses Ajax to handle page requests.</p>
             <pre><code class="language-javascript">
 const express = require('express');
 const path = require('path');
@@ -53,10 +55,15 @@ app.listen(8082, function () {
 &lt;/nav>
         </code></pre>
         </div>
-
-
         <div class="docElement">
             <h2>Flexbox</h2>
+            <p>Listed bellow are some examples of how we both individually and together use CSS Flexbox
+            to ensure responsive design \n
+            To ensure a "wholesome" feel to our design, we made one overarching css-file handling the
+                navbar, main, and footer. Individually, we loaded our content in to the pages main tag,
+                With the restriction that the content should not flow out of this container.
+            </p>
+            <h3>Media query to handle smaller screens</h3>
             <pre><code class="language-css">
 @media screen and (min-width: 768px) {
     nav ul{
@@ -75,8 +82,51 @@ app.listen(8082, function () {
     }
 }
     </code></pre>
-</div>
+        <h3>
+            Pokémon images
+        </h3>
+        <pre><code class="language-css">
+/*Photo album*/
+#photoalbum{
+    width: 100%;
+    padding: 0;
+    margin: 0;
 
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+}
+        </code></pre>
+        <h3>Flexing jokke</h3>
+            <pre><code class="language-css">
+                /* CSS for each panel of Jokke */
+.jokke{
+    background: #ccc;
+    color: #eee;
+    text-align: center;
+    align-items:center;
+    min-width: 0;
+    /* Smooth transition */
+    transition:
+            flex 0.6s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+            font-size 0.6s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+            background 0.3s;
+    font-size: 4vw;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex: 1;
+    box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);
+}
+            </code></pre>
+            <p>These are just a few examples, we encourage you to check </p>
+</div>
         <div class="docElement">
             <h2>Ajax</h2>
             <p>We used Ajax to load in the individual team members html files, when navigating
@@ -93,7 +143,7 @@ $(document).ready(function(){
 
         <div class="docElement">
             <h2>Examples of JQuery</h2>
-            <p>Everyone used the JQuery library to achieve different kinds of features on their site.
+            <p>Everyone used the JQuery library to achieve different kinds of features on their page.
             Featured below are some examples, with and emphasis on showcasing how we used JQuery
             in accordance with the task.</p>
             <h3>Email verification</h3>

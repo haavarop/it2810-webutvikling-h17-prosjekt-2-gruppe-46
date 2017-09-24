@@ -10,7 +10,7 @@
         <script src="javascript/prism.js"></script>
 
         <div class="docElement">
-            <h2>Use ofNode.js w/ React for server on port 8082</h2>
+            <h2>Use of Node.js w/ Express for server on port 8082</h2>
             <pre><code class="language-javascript">
 const express = require('express');
 const path = require('path');
@@ -32,6 +32,10 @@ app.listen(8082, function () {
 
         <div class="docElement">
         <h2>Custom navigation</h2>
+        <p>
+            The Navbar is made from scratch, where the styling can be found in public/css/navbar.css.
+            We used a very simplistic design with flexboxes and media-queries ensuring responsiveness.
+        </p>
         <pre><code class="language-markup">
 &lt;nav>
     &lt;ul>
@@ -73,13 +77,58 @@ app.listen(8082, function () {
     </code></pre>
 </div>
 
-        <div class="docElemtn">
-            <h2>ajax</h2>
+        <div class="docElement">
+            <h2>Ajax</h2>
+            <p>We used Ajax to load in the individual team members html files, when navigating
+            to their respective sites </p>
             <pre><code class="language-javascript">
 $(document).ready(function(){
     $(".view").on('click', function(){
         var name = this.id;
         $(".main-content").load(name+'.html');
+    });
+});
+            </code></pre>
+        </div>
+
+        <div class="docElement">
+            <h2>Examples of JQuery</h2>
+            <p>Everyone used the JQuery library to achieve different kinds of features on their site.
+            Featured below are some examples, with and emphasis on showcasing how we used JQuery
+            in accordance with the task.</p>
+            <h3>Email verification</h3>
+            <pre><code class="language-javascript">
+function validate() {
+    $("#result").text("").fadeIn();
+    var email = $("#email-field").val();
+
+    if(validateEmailSubmit(email)){
+        $("#result")
+            .text(email + " added to newsletter")
+            .css("color", "green");
+        window.setTimeout(wait,3000);
+    }else{
+        $("#result")
+            .text(email + " is not valid")
+            .css("color", "red");
+        window.setTimeout(wait,3000);
+
+    }
+    return false;
+}
+
+function wait() {
+   $("#result").fadeOut("slow");
+}
+            </code></pre>
+            <h3>
+            Handling images
+            </h3>
+            <pre><code class="language-javascript">
+$(document).ready(function () {
+    $('.jokke').on('click', function () {
+        this.classList.toggle('open');
+        this.classList.toggle('open-active');
     });
 });
             </code></pre>

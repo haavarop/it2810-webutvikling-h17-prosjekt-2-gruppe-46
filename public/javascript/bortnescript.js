@@ -22,20 +22,4 @@ function showSlide() {
     setTimeout(showSlide, 3000);
 }
 
-var music = new Audio('music/wait_a_minute.mp3');
-var playing = 0;
-function playMusic() {
-    if (playing ===0){
-        music.play();
-        playing=1;
-    }
-    else{
-        music.pause();
-        playing=0;
-    }
-}
-
-function stopMusic() {
-    music.pause();
-}
 

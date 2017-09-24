@@ -20,7 +20,7 @@ img{
 .flex-container-image{
     height: 100%;
     border-radius: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .dots-for-images{
@@ -47,10 +47,6 @@ img{
     background-color: #717171;
 }
 
-.botton-music{
-    text-align: center;
-    padding-bottom: 20px;
-}
 
 button {
     width: 100%;

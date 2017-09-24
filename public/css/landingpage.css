@@ -1,0 +1,25 @@
+.landing{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    justify-content: center;
+    max-width: 100%;
+    margin: auto;
+}
+
+img{
+    justify-content: center;
+    max-width: 100%;
+}
+
+.info{
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.info p{
+    font-size: 1.5em;
+}

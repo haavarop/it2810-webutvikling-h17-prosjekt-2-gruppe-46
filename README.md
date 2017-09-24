@@ -34,16 +34,16 @@ $ npm test
 
 ## Checklist
 
-- [ ] Use NodeJs and express as webserver
-- [ ] CSS Flexbox Layout
-- [ ] "From scratch" navbar
-- [ ] Use of Ajax-functionality
-- [ ] Responsive web design
-- [ ] Test coverage
+- [x] Use NodeJs and express as webserver
+- [x] CSS Flexbox Layout
+- [x] "From scratch" navbar
+- [x] Use of Ajax-functionality
+- [x] Responsive web design
+- [x] Test coverage
 
 ### JQuery
-- [ ] Only using the basic JQuery library
-- [ ] Selector functionality
-- [ ] One or more functions from the JQuery API
-- [ ] Function as param
-- [ ] Event handling
+- [x] Only using the basic JQuery library
+- [x] Selector functionality
+- [x] One or more functions from the JQuery API
+- [x] Function as param
+- [x] Event handling
